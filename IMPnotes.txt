@@ -1,0 +1,7 @@
+size conversion:
+
+30px = 4%
+100px = 13%
+
+20px = 1.3em
+5px = 0.325em

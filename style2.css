@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+.container section {
+    min-width: 100%;
+    height: auto;
+    display: flex;
+    height: 100vh;
+    background-image: url(images/hogwarts7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.container section:nth-child(2) {
+    background-image: url(images/gryffinroom.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.container section:nth-child(3) {
+    background-image: url(images/quidditch.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.container section:nth-child(4) {
+    background-image: url(images/hogsmeade.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.749);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.75;
+    align-items: baseline;
+}
+
+.container section .content {
+    max-width: 100%;
+    padding: 40px;
+}
+
+.container section .content h2 {
+    font-size: 4em;
+    color: rgb(255, 255, 255);
+}
+
+.container section .content p {
+    font-size: 1.3em;
+    line-height: 1.4em;
+    color: rgb(255, 255, 255);
+}
+
+@media(max-width:991px) {
+    .container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        transform: none !important;
+    }
+}
